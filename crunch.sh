@@ -8,29 +8,29 @@ main(){
   echo -n "Maximum Length to generate Password: "
   read max
 
-  echo -n "Enter your father's name: "
+  echo -n "Victim's Name : "
+  read name
+
+  echo -n "Enter Victim's father's name: "
   read father
 
-  echo -n "Enter your mother's name: "
+  echo -n "Enter Victim's mother's name: "
   read mother
 
-  echo -n "Enter your pet's name: "
+  echo -n "Enter Victim's pet's name: "
   read pet_name
 
-  echo -n "Enter your birth city: "
+  echo -n "Enter Victim's birth city: "
   read born_city
 
-  echo -n "Enter your date of birth (DDMMYYYY): "
+  echo -n "Enter Victim's DOB (DDMMYYYY): "
   read dob
 
   # Combine all the inputs
-  character_crunch="${father}${mother}${pet_name}${born_city}${dob}"
-
-  # Calculate the required pattern length based on min and max
-  pattern_length=$(( ${#character_crunch} + max - min ))
+  character_crunch="${name}${father}${mother}${pet_name}${born_city}${dob}"
 
   # Using crunch tool to generate password
-  crunch $min $max -t "${character_crunch}@@@@@@@" -o "$filename"
+  crunch $min $max "${character_crunch}" -o "$filename"
 
   if [[ $? -eq 0 ]]; then
     echo "$filename is successfully generated..."
