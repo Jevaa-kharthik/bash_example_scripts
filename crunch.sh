@@ -23,7 +23,9 @@ file_extension(){
 	extension="${filename##*.}"
 }
 
-if [ $extension -e ".txt" ]; then
+file_extension
+
+if [[ $extension == "txt" ]]; then
 	echo -n "Minimum Length to generate Password : "
 	read min
 
@@ -37,5 +39,9 @@ if [ $extension -e ".txt" ]; then
 	crunch $min $max -t "${character_crunch}@@@@@@@" -o $filename
 
 	echo "$filename is Successfully Generated..."
+else
+	echo "You have given the wrong file extension"
+	exit
+fi
 
 
