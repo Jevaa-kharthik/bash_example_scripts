@@ -26,6 +26,9 @@ main(){
   # Combine all the inputs
   character_crunch="${father}${mother}${pet_name}${born_city}${dob}"
 
+  # Calculate the required pattern length based on min and max
+  pattern_length=$(( ${#character_crunch} + max - min ))
+
   # Using crunch tool to generate password
   crunch $min $max -t "${character_crunch}@@@@@@@" -o "$filename"
 
