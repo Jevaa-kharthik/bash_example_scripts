@@ -1,0 +1,32 @@
+# Nmap 7.95 scan initiated Mon Jun 24 15:40:28 2024 as: nmap -sn -oN kpr_nmap.txt 172.168.70.1/24
+Nmap scan report for 172.168.70.126
+Host is up (0.074s latency).
+# Nmap done at Mon Jun 24 15:41:50 2024 -- 256 IP addresses (1 host up) scanned in 81.63 seconds
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-06-24 15:43 IST
+Nmap scan report for 172.168.64.1
+Host is up (0.0053s latency).
+Nmap scan report for 172.168.64.2
+Host is up (0.023s latency).
+Nmap scan report for 172.168.64.52
+Host is up (0.017s latency).
+Nmap scan report for 172.168.64.104
+Host is up (0.043s latency).
+Nmap done: 256 IP addresses (4 hosts up) scanned in 23.50 seconds
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-06-24 15:43 IST
+Nmap done: 256 IP addresses (0 hosts up) scanned in 115.58 seconds
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-06-24 15:45 IST
+Nmap done: 256 IP addresses (0 hosts up) scanned in 72.59 seconds
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-06-24 15:46 IST
+Nmap scan report for 172.168.67.188
+Host is up (0.00078s latency).
+Nmap done: 256 IP addresses (1 host up) scanned in 58.84 seconds
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-06-24 15:47 IST
+Nmap done: 256 IP addresses (0 hosts up) scanned in 73.33 seconds
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-06-24 15:49 IST
+Nmap scan report for 172.168.69.28
+Host is up (0.15s latency).
+Nmap scan report for 172.168.69.240
+Host is up (0.048s latency).
+Nmap done: 256 IP addresses (2 hosts up) scanned in 76.66 seconds
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-06-24 15:50 IST
+Nmap done: 256 IP addresses (0 hosts up) scanned in 73.64 seconds
